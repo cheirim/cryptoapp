@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="cryptoHeader">
+        <h1>Crypto Tracker</h1>
         <input 
         type= 'text' 
         placeholder="Search coin..." 
@@ -31,6 +32,7 @@ function App() {
         }} 
         />
     </div>
+    
     <div className="cryptoDisplay">
         {filteredCoins.map((coin)=>{
           return <Coin 
